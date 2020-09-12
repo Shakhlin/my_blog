@@ -164,6 +164,7 @@ html, body {
 /*////////////////header/////////////////////////////*/
 header {
 	width: 100%;
+	background-color: red;
 }
 h1, h2, p {
 	margin: 0;
