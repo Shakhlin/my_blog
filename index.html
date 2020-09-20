@@ -2,14 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<meta content="width=1180" name="viewport" id="viewport">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Шахлин Тимофей официальный сайт</title>
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
-	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
-	<!--Favicon-->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -17,12 +10,18 @@
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
+	<title>Шахлин Тимофей официальный сайт</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script defer src="js/jquery-3.4.1.min.js"></script>
+	<script defer src="js/jquery.maskedinput.min.js"></script>
+	<script defer src="js/swiper.min.js"></script>
+	<script defer src="js/script.js"></script>
 </head>
 <body>
 	<header>
-		<section class="container-my container-my_setting">
+		<div class="container-my container-my_setting">
 			<div class="header header_setting">
-				<!-- гамбургер-меню -->
 				<nav id="top" class="menu header__menu">
 				  <input id="menu__toggle" type="checkbox" />
 				  <label class="menu__btn" for="menu__toggle">
@@ -42,29 +41,13 @@
 				<address class="address header__address">
 					<a class="address__fhone" href="tel:+74999555555">+7 (984) 150-85-58</a>
 				</address>
-				<!--Регистрация-->
-				<div class="header__link_group">
-					<button class="header__show_popup header__show_popup_btn popup-btn" rel="reg-form">Заказать проект</button>
-					<button class="header__icon-phone" rel="reg-form"></button>
-					<!-- <object  data="img/telephone-header.svg" type="image/svg+xml"></object> -->
-				</div>
-				<div class="popup header__popup reg-form">
-					<a class="popup__close" href="#">Close</a>
-					<h2 class="popup__h2">Оставить заявку</h2>
-					<form class="popup__form" method="post" action="https://echo.htmlacademy.ru/">
-						<label class="popup__login" for="login">Имя:</label>
-						<input class="popup__text" id="login" type="text" name="name" />
-						<label class="popup__email" for="email">E-mail:</label>
-						<input class="popup__email-input" id="email" type="email" name="email" />
-						<label class="popup__tel" for="tel">Телефон:</label>
-						<input id="tel" class="popup__text tel" type="text" name="tel" />
-						<input class="popup__submit" type="submit" value="Отправить" />
-					</form>
-				</div>
-				<!--Регистрация-->
+				<button class="header__show_popup header__show_popup_btn popup-btn" rel="reg-form">Заказать проект</button>
+				<button class="header__icon-phone" rel="reg-form"></button>
 			</div>
-		</section>
-		<!--Блок developer-->
+		</div>
+	</header>
+
+	<main>
 		<section class="container-background container-background_fluid">
 			<div class="container-my container-my_setting">
 				<div class="developer developer_setting">
@@ -85,13 +68,10 @@
 						<source srcset="img/tima.png" media="(min-width: 576px)">
 						<img class="developer__image_default" src="img/tima.png" srcset="img/tima.png" alt="My-default-image">
 					</picture>
-					<!--<img src="img/tima.png" class="developer" alt="developer">
-					<img src="img/tima-min.png" class="developer-min" alt="developer">-->
 				</div>
 			</div>
 		</section>
-	</header>
-	<main> 
+
 		<section class="container-my container-my_setting">
 			<div id="servises" class="make">
 				<h1 class="make__h1">Что я делаю</h1>
@@ -112,6 +92,7 @@
 				<button type="button" class="make__btn make__btn_blue popup-btn" rel="reg-form">Узнать стоимость</button>
 			</div>
 		</section>
+
 		<section class="container-portfolio container-portfolio_fluid">
 			<div class="container-my container-my_setting">
 				<div id="portfolio" class="portfolio">
@@ -137,15 +118,11 @@
 						<button class="slider__button slider__button-next" aria-label="Следующий слайд"></button>
 						<div class="slider__pagination paginator" aria-hidden="true"></div>
 					</div>
-									
-					<!-- <div class="pointer">
-						<div class="pointer-left"></div>
-						<div class="pointer-right"></div>
-					</div> -->
 					<button type="button" class="portfolio__btn portfolio__btn_blue popup-btn" rel="reg-form">Заказать проект</button>
 				</div>
 			</div>
 		</section>
+
 		<section class="price price__fluid">
 			<div class="container-my container-my_setting">
 				<div id="cost" class="val">
@@ -163,7 +140,22 @@
 				</div>
 			</div>
 		</section>
+
+		<div class="popup reg-form">
+			<a class="popup__close" href="#">Close</a>
+			<h2 class="popup__h2">Оставить заявку</h2>
+			<form class="popup__form" method="post" action="https://echo.htmlacademy.ru/">
+				<label class="popup__login" for="login">Имя:</label>
+				<input class="popup__text" id="login" type="text" name="name" />
+				<label class="popup__email" for="email">E-mail:</label>
+				<input class="popup__email-input" id="email" type="email" name="email" />
+				<label class="popup__tel" for="tel">Телефон:</label>
+				<input id="tel" class="popup__text tel" type="text" name="tel" />
+				<input class="popup__submit" type="submit" value="Отправить" />
+			</form>
+		</div>
 	</main>
+
 	<footer>
 		<div class="container-my container-my_setting">
 			<div class="footer-block footer-block_setting">
@@ -174,12 +166,10 @@
 				</ul>
 				<div class="contact">
 					<address class="contact__phone">
-						<!-- <object class="telephone" data="img/telephone.svg" type="image/svg+xml"></object> -->
 						<span class="fa fa-phone fa-fw telephone" aria-hidden="true"></span>
 						<a class="fhone-footer" href="tel:+79841508558">+7 (984) 150-85-58</a>
 					</address>
 					<address class="contact__mail">
-						<!-- <object class="message" data="img/message.svg" type="image/svg+xml"></object> -->
 						<span class="contact__message fa fa-envelope fa-fw" aria-hidden="true"></span>
 						<a class="contact__icon-sms" href="mailto:web_developer_vl@mail.ru">web_developer_vl@mail.ru</a>
 					</address>	
@@ -202,16 +192,7 @@
 				</small>
 			</div>
 		</div>
-		<!-- Якорь -->
 		<a class="back-top" href="#top"><span class="text-link">Наверх</span></a>
 	</footer>
-	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/picturefill.min.js"></script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script src="js/script.js"></script>
 </body>
 </html>

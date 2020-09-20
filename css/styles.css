@@ -413,13 +413,13 @@ button:focus {
 	margin: 25px 0 0 0;
 	width: 26px;
 	height: 26px;
-	background-image: url(../img/telephone-header.svg);
+	background-image: url(../img/icon/telephone-header.svg);
 	border: none;
 	background-color: #fff;
 }
 /**********popup links**********/
 /**********All styles popup**********/
-.header__popup {
+.popup {
 	padding: 10px 15px 15px;
 	position:fixed;
 	top:200px;
@@ -444,7 +444,7 @@ button:focus {
 	position:absolute;
 	top:10px;
 	right:10px;
-	background:url(../img/close.png) no-repeat;
+	background:url(../img/icon/close.png) no-repeat;
 }
 
 /**********popup reg-form**********/
@@ -509,7 +509,7 @@ button:focus {
 
 /*developer-block*/
 .container-background {
-	background: url(../img/background.png) right bottom;
+	background: url(../img/background/background.png) right bottom;
 	background-repeat: no-repeat;
 }
 
@@ -891,12 +891,12 @@ button:focus {
 }
 .slider__button-prev {
 	left: -30px;
-  	background-image: url(../img/arrow.png);
+  	background-image: url(../img/icon/arrow.png);
 	background-repeat: no-repeat;
 }
 .slider__button-next {
 	right: -30px;
-  	background-image: url(../img/arrow.png);
+  	background-image: url(../img/icon/arrow.png);
 	background-repeat: no-repeat;
 	transform: rotate(180deg);
 }	
@@ -1065,7 +1065,7 @@ button:focus {
 	display: inline-block;
 	width: 35px;
 	height: 29px;
-	background-image: url(../img/sprite-my.png);
+	background-image: url(../img/icon/sprite-my.png);
 	background-repeat: no-repeat;
 }
 .social__icon-vk:hover,
@@ -1073,14 +1073,14 @@ button:focus {
 .social__icon-vk:focus {
 	width: 35px;
 	height: 29px;
-	background-image: url(../img/sprite-my-hover.png);
+	background-image: url(../img/icon/sprite-my-hover.png);
 	background-repeat: no-repeat;
 }
 .social__icon-facebook {
 	display: inline-block;
 	width: 35px;
 	height: 29px;
-	background-image: url(../img/sprite-my.png);
+	background-image: url(../img/icon/sprite-my.png);
 	background-repeat: no-repeat;
 	background-position:  -55px 0;
 }
@@ -1089,7 +1089,7 @@ button:focus {
 .social__icon-facebook:focus {
 	width: 35px;
 	height: 29px;
-	background-image: url(../img/sprite-my-hover.png);
+	background-image: url(../img/icon/sprite-my-hover.png);
 	background-repeat: no-repeat;
 	background-position:  -55px 0;
 }
@@ -1097,7 +1097,7 @@ button:focus {
 	display: inline-block;
 	width: 35px;
 	height: 29px;
-	background-image: url(../img/sprite-my.png);
+	background-image: url(../img/icon/sprite-my.png);
 	background-repeat: no-repeat;
 	background-position:  -108px 0;
 }
@@ -1106,7 +1106,7 @@ button:focus {
 .social__icon-twitter:focus {
 	width: 35px;
 	height: 29px;
-	background-image: url(../img/sprite-my-hover.png);
+	background-image: url(../img/icon/sprite-my-hover.png);
 	background-repeat: no-repeat;
 	background-position:  -108px 0;
 }
@@ -1114,7 +1114,7 @@ button:focus {
 	display: inline-block;
 	width: 35px;
 	height: 29px;
-	background-image: url(../img/sprite-my.png);
+	background-image: url(../img/icon/sprite-my.png);
 	background-repeat: no-repeat;
 	background-position:  -163px 0;
 }
@@ -1123,7 +1123,7 @@ button:focus {
 .social__icon-insta:focus {
 	width: 35px;
 	height: 29px;
-	background-image: url(../img/sprite-my-hover.png);
+	background-image: url(../img/icon/sprite-my-hover.png);
 	background-repeat: no-repeat;
 	background-position:  -163px 0;
 }
@@ -1148,7 +1148,7 @@ button:focus {
 
 /*////////////////якорь/////////////////////////////*/
 .back-top {
-  	background-image: url('../img/arrow.png');
+  	background-image: url('../img/icon/arrow.png');
   	transform: rotate(90deg);
   	border: none;
   	position: fixed;
@@ -1366,7 +1366,7 @@ button:focus {
 
 @media (min-width: 780px) and (max-width: 1200px) {
 	.container-background {
-    background: url(../img/background-1200min.png) right bottom;
+    background: url(../img/background/background-1200min.png) right bottom;
     background-repeat: no-repeat;
 	}
 }
@@ -1407,10 +1407,6 @@ button:focus {
 	.developer__h1 {
     font-size: 54px;
 	}
-	/*.block-with-fhoto {
-    background: url(../img/tima_min_2.png) 100% 100%;
-    background-repeat: no-repeat;
-	}*/
 	.container-my_setting {
 		max-width: 945px;
 	    padding-right: 40px;
@@ -1432,7 +1428,7 @@ button:focus {
 
 @media (min-width: 576px) and (max-width: 780px) {
 	.container-background {
-    background: url(../img/background-1200min.png) right top;
+    background: url(../img/background/background-1200min.png) right top;
     background-repeat: no-repeat;
 	}
 	.footer-block {
@@ -1493,7 +1489,7 @@ button:focus {
 		margin-right: auto;
 	} 
 	.container-background {
-	    background: url(../img/background-320.png) 50% 12%;
+	    background: url(../img/background/background-320.png) 50% 12%;
 	    background-repeat: no-repeat;
 	}
 	/*.developer {
@@ -1607,7 +1603,7 @@ button:focus {
 		width: 158px;
 	}
 	.container-background {
-    	background: url(../img/background-320.png) center top 30px;
+    	background: url(../img/background/background-320.png) center top 30px;
     	background-repeat: no-repeat;
 	}
 	.make__h1 {
